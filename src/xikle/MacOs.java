@@ -8,15 +8,8 @@ package xikle;
  *
  * @author DAM
  */
-public class MacOs extends ClasePadre {
-         public MacOs(String version, int ramMaxima, int bits) {
-        super(version, ramMaxima, bits);
-    }
-
-    @Override
-    public String Copiar(String copiado) {
-        return super.Copiar(copiado); //To change body of generated methods, choose Tools | Templates.
-    }
-         
-         
+public abstract class MacOs extends ClasePadre {
+         public MacOs(String version, int ramMaxima, int bits, String copiar, String pegar) {
+         super(version, ramMaxima, bits, copiar, pegar);
+         }
 }
