@@ -12,8 +12,8 @@ import java.util.Random;
  */
 public abstract class Linux extends ClasePadre{
     
-    public Linux (String version,int ramMaxima, int bits,String copiar,String pegar){
-        super(version, ramMaxima, bits, copiar, pegar);
+    public Linux (String version,int ramMaxima, int bits){
+        super(version, ramMaxima, bits);
     }
 
     @Override
