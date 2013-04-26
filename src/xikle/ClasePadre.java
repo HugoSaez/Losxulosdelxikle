@@ -3,14 +3,12 @@ package xikle;
 
 
 public abstract class ClasePadre {
-    private String version,copiar,pegar;
+    private String version;
     private int ramMaxima,bits;
     public ClasePadre(String version,int ramMaxima, int bits,String copiar,String pegar) {
         this.version=version;
         this.ramMaxima=ramMaxima;
         this.bits=bits;
-        this.copiar=copiar;
-        this.pegar=pegar;
     }     
     public String getVersion() {
         return version;
@@ -20,6 +18,12 @@ public abstract class ClasePadre {
     }
     public int getBits() {
         return bits;
+    }
+    public  String copiar(String copiado){
+        return "Se esta copiando";
+    }
+    public String pegar(String pegado){
+        return "Se esta pegando";
     }
     public abstract String buscarVirus (String texto);
     public abstract String pantallazoAzul (String texto);
