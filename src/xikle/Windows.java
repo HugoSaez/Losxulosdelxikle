@@ -10,19 +10,11 @@ package xikle;
  */
 public class Windows extends ClasePadre  {
 
-    public Windows(String version, int ramMaxima, int bits) {
-        super (version,ramMaxima,bits);
+    public Windows(String version, int ramMaxima, int bits,String copiar,String pegar) {
+        super (version,ramMaxima,bits,copiar,pegar);
     }
 
-    @Override
-    public String Copiar(String copiado) {
-        return super.Copiar(copiado);
-    }
-
-    @Override
-    public String Pegar(String pegado) {
-        return super.Pegar(pegado);
-    }
+ 
     
     
     
