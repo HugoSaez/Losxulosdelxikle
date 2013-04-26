@@ -8,13 +8,21 @@ package xikle;
  *
  * @author DAM
  */
-public class Windows extends ClasePadre  {
+public class abstract Windows extends ClasePadre  {
 
-    public Windows(String version, int ramMaxima, int bits,String copiar,String pegar) {
-        super (version,ramMaxima,bits,copiar,pegar);
+    public Windows(String version, int ramMaxima, int bits) {
+        super (version,ramMaxima,bits);
     }
 
- 
+    @Override
+    public String copiar(String copiado) {
+        return super.Copiar(copiado);
+    }
+
+    @Override
+    public String pegar(String pegado) {
+        return super.Pegar(pegado);
+    }
     
     
     
