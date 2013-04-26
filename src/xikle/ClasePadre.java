@@ -3,10 +3,14 @@ package xikle;
 
 
 public class ClasePadre {
-    public  class sistemas {
-        private String version ;
-        private int ramMaxima,bits;
-
+    private String version ;
+    private int ramMaxima,bits;
+    public ClasePadre(String version,int ramMaxima, int bits) {
+        this.version=version;
+        this.ramMaxima=ramMaxima;
+        this.bits=bits;
+    }
+        
         public String getVersion() {
             return version;
         }
@@ -18,6 +22,9 @@ public class ClasePadre {
         public int getBits() {
             return bits;
         }
+        public String Copiar(String copiado){
+            return copiado;
     }
+    
  
 }
