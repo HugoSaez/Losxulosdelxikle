@@ -5,7 +5,7 @@ package xikle;
 public abstract class ClasePadre {
     private String version;
     private int ramMaxima,bits;
-    public ClasePadre(String version,int ramMaxima, int bits,String copiar,String pegar) {
+    public ClasePadre(String version,int ramMaxima, int bits) {
         this.version=version;
         this.ramMaxima=ramMaxima;
         this.bits=bits;
@@ -27,5 +27,4 @@ public abstract class ClasePadre {
     }
     public abstract String buscarVirus (String texto);
     public abstract String pantallazoAzul (String texto);
- 
 }
