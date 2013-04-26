@@ -10,7 +10,7 @@ public class ClasePadre {
         this.ramMaxima=ramMaxima;
         this.bits=bits;
     }
-        
+       
         public String getVersion() {
             return version;
         }
