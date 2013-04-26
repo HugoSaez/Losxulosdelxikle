@@ -24,7 +24,10 @@ public class ClasePadre {
         }
         public String Copiar(String copiado){
             return copiado;
-    }
+        }
+        public String Pegar(String pegado){
+            return pegado;
+        }
     
  
 }
