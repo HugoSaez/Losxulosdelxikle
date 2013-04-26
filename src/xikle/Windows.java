@@ -10,7 +10,7 @@ import java.util.Random;
  *
  * @author DAM
  */
-public abstract class Windows extends ClasePadre  {
+public class Windows extends ClasePadre  {
     Random r = new Random();
     
 
@@ -44,10 +44,13 @@ public abstract class Windows extends ClasePadre  {
             return "Virus no encontrado";
     }
     public String limpiar(){
-        int ram = r.nextInt(2);
-        if (ram==0)
-            return "Virus limpiado";
-        else
-            return "Virus no limpiado";
+        if (pantallazoAzul(null).startsWith("Pan")){
+             int ram = r.nextInt(2);
+            if (ram==0)
+                return "Virus limpiado";
+            else
+                return "Virus no limpiado";
+        }
+        else return "no se ha podido limpiar el vuris";
     }
 }
