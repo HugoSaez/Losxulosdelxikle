@@ -2,7 +2,7 @@
 package xikle;
 
 
-public class ClasePadre {
+public abstract class ClasePadre {
     private String version ;
     private int ramMaxima,bits;
     public ClasePadre(String version,int ramMaxima, int bits) {
@@ -25,7 +25,7 @@ public class ClasePadre {
     public String pegar(String pegado){
         return pegado;
     }
-    public abstract String publicar (String texto);
-    public abstract String publiconFoto (String texto,String foto);
+    public abstract String buscarVirus (String texto);
+    public abstract String pantallazoAzul (String texto);
  
 }
