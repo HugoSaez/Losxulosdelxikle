@@ -9,25 +9,23 @@ public class ClasePadre {
         this.version=version;
         this.ramMaxima=ramMaxima;
         this.bits=bits;
+    }     
+    public String getVersion() {
+        return version;
     }
-       
-        public String getVersion() {
-            return version;
-        }
-
-        public int getRamMaxima() {
-            return ramMaxima;
-        }
-
-        public int getBits() {
-            return bits;
-        }
-        public String Copiar(String copiado){
-            return copiado;
-        }
-        public String Pegar(String pegado){
-            return pegado;
-        }
-    
+    public int getRamMaxima() {
+        return ramMaxima;
+    }
+    public int getBits() {
+        return bits;
+    }
+    public String copiar(String copiado){
+        return copiado;
+    }
+    public String pegar(String pegado){
+        return pegado;
+    }
+    public abstract String publicar (String texto);
+    public abstract String publiconFoto (String texto,String foto);
  
 }
