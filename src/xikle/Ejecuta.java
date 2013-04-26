@@ -41,10 +41,26 @@ public class Ejecuta {
                     if (opcion==1) System.out.println(W.copiar(null));
                     else if (opcion == 2) System.out.println(L.copiar(null));
                 }
+                    case 3:{
+                   if (opcion==1) System.out.println(W.pegar(null));
+                   else if (opcion==2) System.out.println(L.pegar(null));
+                   else System.out.println(M.pegar(null));
+               }
+                case 4:{
+                    if (opcion==1) System.out.println(W.buscarVirus(null));
+                    else if (opcion==2) System.out.println(L.buscarVirus(null));
+                    else System.out.println(M.buscarVirus(null));
+                }
+                case 5: {
+                    if (opcion==1) System.out.println(W.pantallazoAzul(null));
+                    else if (opcion == 2) System.out.println(L.pantallazoAzul(null));
+                    else System.out.println(M.copiar(null));break;
+                }
+                case 6:{
+                    if (opcion==1) System.out.println(W.limpiar());
+                    else System.out.println("No se limpia virus");break; 
+                }
             }
-            
-        }while(opcion != 7);
-        
-        
+        }while(opcion != 7); 
     }
 }
